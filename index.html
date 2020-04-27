@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Frontend-разработчик и веб-верстальщик</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+
+</head>
+
+<body>
+	<header class="page-header fixed-container">
+		<nav class="page-header__hamburger-menu hamburger-menu hamburger-menu--desktop">
+			<ul class="hamburger-menu__list link-list--desktop">
+				<li class="link-list__item--desktop">
+					<a class="box__item--desktop" href="#skills__title">Услуги</a>
+				</li>
+
+				<li class="link-list__item--desktop">
+					<a class="box__item--desktop" href="#praxis">Портфолио</a>
+				</li>
+
+				<li class="link-list__item--desktop">
+					<a class="box__item--desktop" href="#price">Стоимость</a>
+				</li>
+			</ul>
+		</nav>
+
+		<button class="hamburger-menu__button button--mobile">
+	    	<span class="button__span"></span>
+	    	<span class="button__span"></span>
+	    	<span class="button__span"></span>
+	    </button>
+
+	    <nav class="page-header__hamburger-menu hamburger-menu hamburger-menu--mobile">
+	    	<ul data-visible="false" class="hamburger-menu__list link-list--mobile" >
+		    	<li class="link-list__item--mobile">
+		    		<a class="box__item--mobile" href="#skills__title">Услуги</a>
+		    	</li>
+
+				<li class="link-list__item--mobile">
+					<a class="box__item--mobile" href="#praxis">Портфолио</a>
+				</li>
+
+				<li class="link-list__item--mobile">
+					<a class="box__item--mobile" href="#price">Стоимость</a>
+				</li>
+			</ul>
+	    </nav>
+
+
+		<div class="page-header__contact contact">
+
+			<a class="contact__tel" href="tel:+79154848102">+7 (915) 555-55-55</a>
+			
+			<button class="contact__call">Заказать звонок</button>
+
+			<div class="contact__request-call request-call">
+				
+				<button class="request-call__close close">
+			    	<span class="close__span"></span>
+			    	<span class="close__span"></span>
+			    </button>
+				
+				<form class="request-call__form form" method="post">
+				
+				<legend> Онлайн заявка</legend>
+
+				
+
+					<label class="form__name name">Ваше имя<br>
+						<input class="name__field" type="text" name="name" placeholder="Имя"><br>
+					</label>
+
+					<label class="form__tel tel" type="tel">Ваш номер телефона<br>
+						<input id="phone" class="tel__field" type="text" name="tel" placeholder="+7 (777) 777 77 77"><br>
+					</label>
+
+					<label class="form__address address" type="address" >Адрес вашей электронной почты<br>
+						
+						<input class="address__field" type="email" name="address" placeholder="mail@mail.ru">
+						<span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
+						<br>
+						
+						
+					</label>
+					
+
+					<input class="form__send" type="submit" value="Отправить">
+
+				</form>
+
+			</div>
+
+		</div>
+
+		<button class="page-header__button-phone button-phone--mobile" >
+			<div class="button-phone__img"></div>
+		</button>
+		<div class="overlay"></div>
+	</header>
+
+	<main class="page-menu">
+		<section class="page-menu__worker worker">
+
+			<div class="worker--width">
+				
+				<span class="worker__tag">{&nbsp;}</span>
+				<span class="worker__tag"> # </span>
+				<span class="worker__tag"> &lt;div&gt; </span>
+				<span class="worker__tag"> &lt;div&gt; </span>
+				<span class="worker__tag"> &lt;/&gt; </span>
+
+				<h2 class="worker__title cut-down">заголовок</h2>
+
+				<div class="worker__box box fixed-container">
+
+					<div class="box__about about">
+						<h1 class="about__name">Мария Машталир</h1>
+						<h2 class="about__work">Frontend-разработчик и веб-верстальщик</h2>
+						
+						<button class="about__more">Узнать больше</button>
+					</div>
+					
+					<img class="box__selfie" src="img/shutterstock_574398823.svg" alt="Фото_разработчика">
+
+				</div>
+
+				<picture class="worker__picture picture">
+
+					<img src="img/Ellipse_1.svg" alt="ellipse" class="picture__about-svg--desktop" aria-hidden="true">
+					<img src="img/Ellipse_2.svg" alt="ellipse" class="picture__about-svg--mobile" aria-hidden="true">
+
+				</picture>
+
+			</div>
+		</section>
+
+
+
+		<section class="page-menu__box">
+			
+			<div class="box__skills skills fixed-container">
+				
+				<h2 id="skills__title" class="skills__title">Что я делаю</h2>	
+
+				<div class="skills__services services" >
+
+					<div class="services__service service">
+						<div class="service__description">Вёрстка лендинг–страниц и сайтов любой сложности</div> 
+					</div>
+
+					<div class="services__service service">
+						<div class="service__description">Адаптивная вёрстка под все браузеры и устройства</div>
+					</div>
+
+					<div class="services__service service">
+						<div class="service__description">Frontend – разработка и программирование</div>
+					</div>
+
+					<div class="services__service service">
+						<div class="service__description">Frontend – разработка и программирование</div>
+					</div>
+					
+				</div>
+
+				<div class="skills__button button">
+					<button class="button__price">Узнать стоимость</button>	
+				</div>
+
+			</div>
+
+		</section>
+
+	    <section class="page-menu__praxis slider container">
+
+	      <h2 id="praxis" class="praxis__title">Примеры моих работ</h2>   
+
+	      <ul class="slider__list">
+	        
+	        <li class="slider__item item">
+	          <img class="item__img" src="img/job1.png" alt="пример">
+	          <div class="item__text">Сайт психолога Веры Антоновой</div>
+	        </li>
+
+	        <li class="slider__item item">
+	          <img class="item__img" src="img/job2.png" alt="пример">
+	          <div class="item__text">Сайт магазина детской одежды</div>
+	        </li>
+
+	        <li class="slider__item item">
+	          <img class="item__img" src="img/job3.png" alt="пример">
+	          <div class="item__text">Сайт магазина «Рыболов»</div>
+	        </li>
+
+	        
+	      </ul>
+
+	    <button class="slider__button slider__button--prev" aria-label="Предыдущий слайд"></button>
+
+	    <button class="slider__button slider__button--next" aria-label="Следующий слайд"></button>
+
+	    <div class="slider__pagination paginator" aria-hidden="true"></div>
+
+			<div class="praxis__button button">
+				<button class="button_order">Заказать проект</button>		
+			</div>
+
+		</section>
+
+		<section class="page-menu__circs-block circs-block">
+
+			<h2 class="circs-block__title cut-down">заголовок</h2>
+
+				<span class="circs-block__tag"> {&nbsp;} </span>
+				<span class="circs-block__tag"> # </span>
+				<span class="circs-block__tag"> &lt;div&gt; </span>
+				<span class="circs-block__tag"> &lt;/&gt; </span>
+				<span class="circs-block__tag"> {&nbsp;} </span>
+			
+			<div id="price" class="circs-block__circs  circs fixed-container">
+				<div class="circs__price">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</div>
+				<div class="circs__period">* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</div>
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer_inform inform fixed-container">
+			<nav class="inform__hamburger-menu-bottom hamburger-menu-bottom"> 
+				<ul class="hamburger-menu-bottom__list link-list-footer">
+					
+					<li class="link-list__item item--footer">
+						<a class="item__skill" href="#skills__title">Услуги</a>
+					</li>
+					
+					<li class="link-list__item item--footer">
+						<a class="item__skill" href="#praxis">Портфолио</a>
+					</li>
+					
+					<li class="link-list__item item--footer">
+						<a class="item__skill" href="#price">Стоимость</a>
+					</li>
+
+				</ul>
+			</nav>
+
+			<div class="inform__column column">
+
+				<a class="column__tel--footer " href="tel:+79154848102">+7 (915) 555-55-55</a>
+				<a class="column__email--footer" href="mailto:mashtalir.m@mail.ru">mashtalir.m@mail.ru</a>
+
+			</div>
+				
+			<div class="inform__column column">
+
+				<button class="column__call-footer call-footer" >Заказать звонок</button>
+				
+				<address class="column_address address">
+					<a class="address__sprite sprite" href="https://vk.com" target="_blank">
+						<i class="sprite-vk"></i>
+					</a>
+					<a class="address__sprite sprite" href="https://www.facebook.com" target="_blank">
+						<i class="sprite-fb"></i>
+					</a>
+					<a class="address__sprite sprite" href="https://twitter.com" target="_blank">
+						<i class="sprite sprite-twitter"></i>
+					</a>
+					<a class="address__sprite sprite" href="https://www.instagram.com" target="_blank">
+						<i class="sprite sprite-insta"></i>
+					</a>
+				</address>
+
+			</div>
+					
+		</div>
+
+		<div class="footer__copyright copyright">
+			<small class="copyright__text">© Мария Машталир, 2020 – 2022</small>
+		</div>
+
+	</footer>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
+<script src="jquery.maskedinput.min.js"></script>
+
+</body>
