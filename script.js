@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-	$('.hamburger-menu__button, .box__item--mobile').on('click', function(event){
+	$('.hamburger-menu__button, .link--mobile').on('click', function(event){
 			
 
 		$('body').toggleClass('fixed');
@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 
 
-      $('.form__send').on('click', function(event){
+      /*$('.form__send').on('click', function(event){
         event.preventDefault();
         
         $('.request-call').fadeToggle();
@@ -63,7 +63,26 @@ $(document).ready(function(){
 
         $.post( "https://echo.htmlacademy.ru/", function() {
         alert( "Заявка принята!" );
-      })
+      })*/
+
+ /*     $('.form__send').click( function(event){
+        $( "form" ).submit();// вызываем событие submit на элементе <form>
+      });*/
+
+      $( "form" ).submit(function(){
+        
+        event.preventDefault();
+
+        let $form = $(this);
+     
+        $.post( 
+          $form.attr("https://echo.htmlacademy.ru/"),
+          $form.serialize()
+        );
+
+        return false;
+      });
+
 
     });
 
@@ -73,7 +92,7 @@ $(document).ready(function(){
 
 
 
-});
+
 
 
 

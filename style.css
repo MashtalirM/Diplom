@@ -2,7 +2,9 @@
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-body{
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+.page{
     /* max-width: 1540px; */
     min-width: 320px;
     margin: 0 auto;
@@ -11,9 +13,11 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #fbfbfb;
 }
-*{
+
+html {
     scroll-behavior: smooth;
 }
+
 .fixed-container{
     max-width: 1170px;
     margin: 0 auto;
@@ -71,7 +75,7 @@ body{
             justify-content: space-between; 
 }
 
-button, .jobs__arrow--right, .jobs__arrow--left, .button-phone__img{
+.button, .jobs__arrow--right, .jobs__arrow--left, .button-phone__img{
 cursor: pointer;
 }
 
@@ -236,7 +240,7 @@ cursor: pointer;
     display: none;
 }
 
-input:valid:not(:placeholder-shown) {
+/*input:valid:not(:placeholder-shown) {
     border-color: green;
 }
 
@@ -246,7 +250,7 @@ input:invalid:not(:placeholder-shown) {
 
 input:invalid:not(:placeholder-shown) + .form__error {
     display: block;
-}
+}*/
 
 .overlay {
     width:100%;
@@ -260,17 +264,17 @@ input:invalid:not(:placeholder-shown) + .form__error {
     z-index: 1;
 }
 
-li{
+.link-list__item-box{
     display: inline-block;
     line-height: 44px;
 }
 
-.link-list__item--desktop:nth-of-type(2) *{
+.item-box--desktop:nth-of-type(2) *{
     color: #fc557c;
     border-bottom: 1px solid;
 }
 
-.link-list__item--desktop *{
+.item-box__link{
     text-decoration: none;
     color: black;
 }
@@ -384,6 +388,7 @@ li{
     width: 724px;
     height: 77px;
     margin-bottom: 22px;
+    padding-top: 90px;
     /* Типографика */
     color: #1f1f24;
     font-family: 'Roboto', sans-serif;
@@ -433,6 +438,7 @@ li{
     background-image: -webkit-gradient(linear, left bottom, left top, from(#f26522), color-stop(99%, #fa0891), to(#fa0891));
     background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
     font-weight: 700;
     display: inline-block;
@@ -445,62 +451,66 @@ li{
     -webkit-transform: rotate(30deg);
         -ms-transform: rotate(30deg);
             transform: rotate(30deg);
-   /* left: 122px;
-    top: 30px;  */            
-    -webkit-animation: wheel_11 1s 0s;            
-            animation: wheel_11 1s 0s;    
+    left: 122px;
+    top: 30px;           
+    -webkit-animation: wheel11 1s 0s;            
+            animation: wheel11 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
 }
 
-@-webkit-keyframes wheel_11 {
+/*@-webkit-keyframes wheel11 {
     from { -webkit-transform: translateX(-2000px) translateY(0px) rotate(30deg); transform: translateX(-2000px) translateY(0px) rotate(30deg);}                
     to { -webkit-transform: translateX(120px) translateY(30px) rotate(-330deg); transform: translateX(120px) translateY(30px) rotate(-330deg); }
 }
 
-@keyframes wheel_11 {
+@keyframes wheel11 {
     from { -webkit-transform: translateX(-2000px) translateY(0px) rotate(30deg); transform: translateX(-2000px) translateY(0px) rotate(30deg);}                
     to { -webkit-transform: translateX(120px) translateY(30px) rotate(-330deg); transform: translateX(120px) translateY(30px) rotate(-330deg); }
 }
+*/
 
 
-.worker__tag:nth-child(2) {
+.worker__tag:nth-of-type(2) {
     font-size: 60px;
     -webkit-transform: rotate(17deg);
+       -moz-transform: rotate(17deg);
         -ms-transform: rotate(17deg);
             transform: rotate(17deg);
-/*    left: 237px;
-    top: 255px;  */           
-    -webkit-animation: wheel_21 1s 0s;           
-            animation: wheel_21 1s 0s;    
+    left: 230px;
+    top: 380px;             
+    -webkit-animation: wheel21 1s 0s;    
+       -moz-animation: wheel21 1s 0s;        
+            animation: wheel21 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
    }
 
-@-webkit-keyframes wheel_21 {
+/*@-webkit-keyframes wheel21 {
     from { -webkit-transform: translateX(-2000px) translateY(0) rotate(17deg); transform: translateX(-2000px) translateY(0) rotate(17deg);}                
     to { -webkit-transform: translateX(230px) translateY(380px) rotate(-343deg); transform: translateX(230px) translateY(380px) rotate(-343deg); }
 }
 
-@keyframes wheel_21 {
+@keyframes wheel21 {
     from { -webkit-transform: translateX(-2000px) translateY(0) rotate(17deg); transform: translateX(-2000px) translateY(0) rotate(17deg);}                
     to { -webkit-transform: translateX(230px) translateY(380px) rotate(-343deg); transform: translateX(230px) translateY(380px) rotate(-343deg); }
-}
+}*/
+
 
 .worker__tag:nth-child(3) {
     font-size: 31px;
     -webkit-transform: rotate(-13deg);
         -ms-transform: rotate(-13deg);
             transform: rotate(-13deg);
-/*    left: 776px;
-    top: 60px;   */            
+    left: 776px;
+    top: 60px;         
     -webkit-animation: wheel_31 1s 0s;            
             animation: wheel_31 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
 }
 
-@-webkit-keyframes wheel_31 {
+/*@-webkit-keyframes wheel_31 {
     from { -webkit-transform: translateX(-2000px) translateY(0) rotate(-13deg); transform: translateX(-2000px) translateY(0) rotate(-13deg);}                
     to { -webkit-transform: translateX(770px) translateY(60px) rotate(-13deg); transform: translateX(770px) translateY(60px) rotate(-13deg); }
 }
@@ -508,23 +518,23 @@ li{
 @keyframes wheel_31 {
     from { -webkit-transform: translateX(-2000px) translateY(0) rotate(-13deg); transform: translateX(-2000px) translateY(0) rotate(-13deg);}                
     to { -webkit-transform: translateX(770px) translateY(60px) rotate(-13deg); transform: translateX(770px) translateY(60px) rotate(-13deg); }
-}
+}*/
 
 .worker__tag:nth-child(4) {
     font-size: 40px;
     -webkit-transform: rotate(17deg);
         -ms-transform: rotate(17deg);
             transform: rotate(17deg);
-/*    left: 940px;
+   left: 940px;
     top: auto;
-    bottom: 185px; */            
+    bottom: 185px;            
     -webkit-animation: wheel_41 1s 0s;            
             animation: wheel_41 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
 }
 
-@-webkit-keyframes wheel_41 {
+/*@-webkit-keyframes wheel_41 {
     from { -webkit-transform: translateX(-2000px) translateY(0) rotate(17deg); transform: translateX(-2000px) translateY(0) rotate(17deg);}                
     to { -webkit-transform: translateX(940px) translateY(460px) rotate(-343deg); transform: translateX(940px) translateY(460px) rotate(-343deg); }
 }
@@ -532,23 +542,23 @@ li{
 @keyframes wheel_41 {
     from { -webkit-transform: translateX(-2000px) translateY(0) rotate(17deg); transform: translateX(-2000px) translateY(0) rotate(17deg);}                
     to { -webkit-transform: translateX(940px) translateY(460px) rotate(-343deg); transform: translateX(940px) translateY(460px) rotate(-343deg); }
-}
+}*/
 
 .worker__tag:nth-child(5) {
     font-size: 42px;
     -webkit-transform: rotate(-20deg);
         -ms-transform: rotate(-20deg);
             transform: rotate(-20deg);
-/*    left: 368px;
+    left: 368px;
     top: auto;
-    bottom: 55px;*/             
+    bottom: 55px;             
     -webkit-animation: wheel_51 1s 0s;             
             animation: wheel_51 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
 }
 
-@-webkit-keyframes wheel_51 {
+/*@-webkit-keyframes wheel_51 {
     from { -webkit-transform: translateX(-2000px) translateY(0) rotate(-20deg); transform: translateX(-2000px) translateY(0) rotate(-20deg);}                
     to { -webkit-transform: translateX(368px) translateY(590px) rotate(-340deg); transform: translateX(368px) translateY(590px) rotate(-340deg); }
 }
@@ -556,7 +566,7 @@ li{
 @keyframes wheel_51 {
     from { -webkit-transform: translateX(-2000px) translateY(0) rotate(-20deg); transform: translateX(-2000px) translateY(0) rotate(-20deg);}                
     to { -webkit-transform: translateX(368px) translateY(590px) rotate(-340deg); transform: translateX(368px) translateY(590px) rotate(-340deg); }
-}
+}*/
 
 .worker--width{
     max-width: 2000px;
@@ -710,20 +720,20 @@ li{
     text-align: center;
 }
 
-h1{
-    /* Блочная модель */
+/*h1{
+    /* Блочная модель
     padding-top: 90px;
     margin-bottom: 93px;
-    /* Типографика */
+    /* Типографика 
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 54px;
     font-weight: 700;
     line-height: 59.73px;
     color: #262626;
-}
+}*/
 
-h2{
+.skills__title, .praxis__title{
     /* Блочная модель */
     margin-bottom: 93px;
     padding-top: 40px;
@@ -1006,7 +1016,9 @@ h2{
 .circs__price{
     /* Блочная модель */
     padding: 86px 0 40px;
+    margin: 0;
     /* Типографика */
+    text-align: start;
     font-family: 'Roboto', sans-serif;
     font-size: 45px;
     font-weight: 700;
@@ -1038,7 +1050,7 @@ h2{
             box-sizing: border-box;
 }
 
-.item-footer a{
+.link-bottom{
     /* Блочная модель */
     height: 33px;
     /* Типографика */
@@ -1046,19 +1058,19 @@ h2{
     font-size: 18px;
     font-weight: 400;
     color: #8993ad;
-    text-decoration: none;
 }
 
 .hamburger-menu--desktop{
     margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */   
 }
-ul {
+
+.link-list {
     margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 
-.link-list-footer{
+.menu-bottom__link-list{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1212,11 +1224,9 @@ ul {
     z-index: 1;
 }
 
-.box__item--mobile{
+.link--mobile{
     display: block;
     padding: 12px 24px;
-
-    color: #333;
 
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -1225,7 +1235,7 @@ ul {
     text-decoration: none;
 
 }
-.box__item--mobile:hover {
+.link--mobile:hover {
     background-color: pink;
 }
 
@@ -1329,8 +1339,10 @@ a:hover{
             animation: wheel_12 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+            left: 40px;
+            top: 30px;
 }
-
+/*
 @-webkit-keyframes wheel_12 {
     from { -webkit-transform: translateX(120px) translateY(30px) rotate(30deg); transform: translateX(120px) translateY(30px) rotate(30deg); }                
     to { -webkit-transform: translateX(40px) translateY(30px) rotate(30deg); transform: translateX(40px) translateY(30px) rotate(30deg); }
@@ -1339,7 +1351,7 @@ a:hover{
 @keyframes wheel_12 {
     from { -webkit-transform: translateX(120px) translateY(30px) rotate(30deg); transform: translateX(120px) translateY(30px) rotate(30deg); }                
     to { -webkit-transform: translateX(40px) translateY(30px) rotate(30deg); transform: translateX(40px) translateY(30px) rotate(30deg); }
-}
+}*/
 
 
 .worker__tag:nth-child(2) {
@@ -1349,9 +1361,12 @@ a:hover{
             animation: wheel_22 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+
+            left: 30px;
+            top:455px;
 }
 
-@-webkit-keyframes wheel_22 {
+/*@-webkit-keyframes wheel_22 {
     from { -webkit-transform: translateX(230px) translateY(255px) rotate(17deg); transform: translateX(230px) translateY(255px) rotate(17deg);}                
     to { -webkit-transform: translateX(30px) translateY(455px) rotate(17deg); transform: translateX(30px) translateY(455px) rotate(17deg); }
 }
@@ -1359,7 +1374,7 @@ a:hover{
 @keyframes wheel_22 {
     from { -webkit-transform: translateX(230px) translateY(255px) rotate(17deg); transform: translateX(230px) translateY(255px) rotate(17deg);}                
     to { -webkit-transform: translateX(30px) translateY(455px) rotate(17deg); transform: translateX(30px) translateY(455px) rotate(17deg); }
-}
+}*/
 
 .worker__tag:nth-child(3) {
           
@@ -1368,9 +1383,12 @@ a:hover{
             animation: wheel_32 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+
+     left: 800px;
+     top: 30px;
 }
 
-@-webkit-keyframes wheel_32 {
+/*@-webkit-keyframes wheel_32 {
     from { -webkit-transform: translateX(770px) translateY(60px) rotate(-13deg); transform: translateX(770px) translateY(60px) rotate(-13deg);}                
     to { -webkit-transform: translateX(800px) translateY(30px) rotate(-13deg); transform: translateX(800px) translateY(30px) rotate(-13deg); }
 }
@@ -1379,7 +1397,7 @@ a:hover{
     from { -webkit-transform: translateX(770px) translateY(60px) rotate(-13deg); transform: translateX(770px) translateY(60px) rotate(-13deg);}                
     to { -webkit-transform: translateX(800px) translateY(30px) rotate(-13deg); transform: translateX(800px) translateY(30px) rotate(-13deg); }
 }
-
+*/
 .worker__tag:nth-child(4) {
             
     -webkit-animation: wheel_42 1s 0s;
@@ -1387,9 +1405,11 @@ a:hover{
             animation: wheel_42 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+    left: 380px;
+
 }
 
-@-webkit-keyframes wheel_42 {
+/*@-webkit-keyframes wheel_42 {
     from { -webkit-transform: translateX(0px) translateY(0px) rotate(30deg); transform: translateX(0px) translateY(0px) rotate(30deg);}                
     to { -webkit-transform: translateX(380px) translateY(460px) rotate(30deg); transform: translateX(380px) translateY(460px) rotate(30deg); }
 }
@@ -1397,16 +1417,18 @@ a:hover{
 @keyframes wheel_42 {
     from { -webkit-transform: translateX(0px) translateY(0px) rotate(30deg); transform: translateX(0px) translateY(0px) rotate(30deg);}                
     to { -webkit-transform: translateX(380px) translateY(460px) rotate(30deg); transform: translateX(380px) translateY(460px) rotate(30deg); }
-}
+}*/
 
 .worker__tag:nth-child(5) {           
     -webkit-animation: wheel_52 1s 0s;           
             animation: wheel_52 1s 0s;    
     -webkit-animation-fill-mode: both;    
-            animation-fill-mode: both;  
+            animation-fill-mode: both;
+    left: 460px;
+    top: 115px;  
 }
 
-@-webkit-keyframes wheel_52 {
+/*@-webkit-keyframes wheel_52 {
     from { -webkit-transform: translateX(0px) translateY(0px) rotate(-20deg); transform: translateX(0px) translateY(0px) rotate(-20deg);}                
     to { -webkit-transform: translateX(460px) translateY(115px) rotate(-20deg); transform: translateX(460px) translateY(115px) rotate(-20deg); }
 }
@@ -1414,7 +1436,7 @@ a:hover{
 @keyframes wheel_52 {
     from { -webkit-transform: translateX(0px) translateY(0px) rotate(-20deg); transform: translateX(0px) translateY(0px) rotate(-20deg);}                
     to { -webkit-transform: translateX(460px) translateY(115px) rotate(-20deg); transform: translateX(460px) translateY(115px) rotate(-20deg); }
-}
+}*/
 
 .job:last-of-type{
     display: none;
@@ -1550,11 +1572,8 @@ height: 68px;
             justify-content: space-between;
 
     }
-h1{
-    padding-top: 49px;
-}
 
-h2{
+.skills__title, .praxis__title{
     font-size: 40px;
 }
 .hamburger-menu__button {
@@ -1580,9 +1599,11 @@ h2{
             animation: wheel_13 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+    left: 30px;
+    top: 180px;
 }
 
-@-webkit-keyframes wheel_13 {
+/*@-webkit-keyframes wheel_13 {
     from { -webkit-transform: translateX(120px) translateY(30px) rotate(30deg); transform: translateX(120px) translateY(30px) rotate(30deg); }                
     to { -webkit-transform: translateX(30px) translateY(180px) rotate(30deg); transform: translateX(30px) translateY(180px) rotate(30deg); }
 }
@@ -1591,7 +1612,7 @@ h2{
     from { -webkit-transform: translateX(120px) translateY(30px) rotate(30deg); transform: translateX(120px) translateY(30px) rotate(30deg); }                
     to { -webkit-transform: translateX(30px) translateY(180px) rotate(30deg); transform: translateX(30px) translateY(180px) rotate(30deg); }
 }
-
+*/
 
 .worker__tag:nth-child(2) {
 
@@ -1600,9 +1621,11 @@ h2{
             animation: wheel_23 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+    left: 130px;
+    top: 100px;
 }
 
-@-webkit-keyframes wheel_23 {
+/*@-webkit-keyframes wheel_23 {
     from { -webkit-transform: translateX(230px) translateY(255px) rotate(17deg); transform: translateX(230px) translateY(255px) rotate(17deg);}                
     to { -webkit-transform: translateX(130px) translateY(100px) rotate(17deg); transform: translateX(130px) translateY(100px) rotate(17deg); }
 }
@@ -1611,7 +1634,7 @@ h2{
     from { -webkit-transform: translateX(230px) translateY(255px) rotate(17deg); transform: translateX(230px) translateY(255px) rotate(17deg);}                
     to { -webkit-transform: translateX(130px) translateY(100px) rotate(17deg); transform: translateX(130px) translateY(100px) rotate(17deg); }
 }
-
+*/
 .worker__tag:nth-child(3) {
     
     font-size: 30px;        
@@ -1619,9 +1642,11 @@ h2{
             animation: wheel_33 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+    left: 400px;
+    top: 150px;
 }
 
-@-webkit-keyframes wheel_33 {
+/*@-webkit-keyframes wheel_33 {
     from { -webkit-transform: translateX(770px) translateY(60px) rotate(30deg); transform: translateX(770px) translateY(60px) rotate(30deg);}                
     to { -webkit-transform: translateX(400px) translateY(150px) rotate(30deg); transform: translateX(400px) translateY(150px) rotate(30deg); }
 }
@@ -1629,7 +1654,7 @@ h2{
 @keyframes wheel_33 {
     from { -webkit-transform: translateX(770px) translateY(60px) rotate(30deg); transform: translateX(770px) translateY(60px) rotate(30deg);}                
     to { -webkit-transform: translateX(400px) translateY(150px) rotate(30deg); transform: translateX(400px) translateY(150px) rotate(30deg); }
-}
+}*/
 
 .worker__tag:nth-child(4) {
     display: none;
@@ -1642,9 +1667,12 @@ h2{
             animation: wheel_53 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+
+    left: 300px;
+    top: 40px;
 }
 
-@-webkit-keyframes wheel_53 {
+/*@-webkit-keyframes wheel_53 {
     from { -webkit-transform: translateX(0px) translateY(0px) rotate(-20deg); transform: translateX(0px) translateY(0px) rotate(-20deg);}                
     to { -webkit-transform: translateX(300px) translateY(40px) rotate(-20deg); transform: translateX(300px) translateY(40px) rotate(-20deg); }
 }
@@ -1652,7 +1680,7 @@ h2{
 @keyframes wheel_53 {
     from { -webkit-transform: translateX(0px) translateY(0px) rotate(-20deg); transform: translateX(0px) translateY(0px) rotate(-20deg);}                
     to { -webkit-transform: translateX(300px) translateY(40px) rotate(-20deg); transform: translateX(300px) translateY(40px) rotate(-20deg); }
-}
+}*/
 
 .contact__tel{
     width: 175px;
@@ -1748,7 +1776,7 @@ h2{
             align-items: center;
 }
 
-.link-list-footer{
+.menu-bottom__link-list{
     padding-right: 20px;
 }
 
@@ -1804,9 +1832,11 @@ h2{
             animation: wheel_14 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+    left: 30px;
+    top: 40px;
 }
 
-@-webkit-keyframes wheel_14 {
+/*@-webkit-keyframes wheel_14 {
     from { -webkit-transform: translateX(120px) translateY(30px) rotate(30deg); transform: translateX(120px) translateY(30px) rotate(30deg); }                
     to { -webkit-transform: translateX(30px) translateY(40px) rotate(30deg); transform: translateX(30px) translateY(40px) rotate(30deg); }
 }
@@ -1814,7 +1844,7 @@ h2{
 @keyframes wheel_14 {
     from { -webkit-transform: translateX(120px) translateY(30px) rotate(30deg); transform: translateX(120px) translateY(30px) rotate(30deg); }                
     to { -webkit-transform: translateX(30px) translateY(40px) rotate(30deg); transform: translateX(30px) translateY(40px) rotate(30deg); }
-}
+}*/
 
 
 .worker__tag:nth-child(2) {
@@ -1824,9 +1854,13 @@ h2{
             animation: wheel_24 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+
+
+    left: 20px;
+    top: 150px;
 }
 
-@-webkit-keyframes wheel_24 {
+/*@-webkit-keyframes wheel_24 {
     from { -webkit-transform: translateX(230px) translateY(255px) rotate(17deg); transform: translateX(230px) translateY(255px) rotate(17deg);}                
     to { -webkit-transform: translateX(20px) translateY(150px) rotate(17deg); transform: translateX(20px) translateY(150px) rotate(17deg); }
 }
@@ -1834,7 +1868,7 @@ h2{
 @keyframes wheel_24 {
     from { -webkit-transform: translateX(230px) translateY(255px) rotate(17deg); transform: translateX(230px) translateY(255px) rotate(17deg);}                
     to { -webkit-transform: translateX(20px) translateY(150px) rotate(17deg); transform: translateX(20px) translateY(150px) rotate(17deg); }
-}
+}*/
 
 .worker__tag:nth-child(3) {
            
@@ -1842,10 +1876,13 @@ h2{
            
             animation: wheel_34 1s 0s;    
     -webkit-animation-fill-mode: both;    
-            animation-fill-mode: both;  
+            animation-fill-mode: both; 
+
+    left: 220px;
+    top: 100px; 
 }
 
-@-webkit-keyframes wheel_34 {
+/*@-webkit-keyframes wheel_34 {
     from { -webkit-transform: translateX(770px) translateY(60px) rotate(30deg); transform: translateX(770px) translateY(60px) rotate(30deg);}                
     to { -webkit-transform: translateX(220px) translateY(100px) rotate(30deg); transform: translateX(220px) translateY(100px) rotate(30deg); }
 }
@@ -1853,7 +1890,7 @@ h2{
 @keyframes wheel_34 {
     from { -webkit-transform: translateX(770px) translateY(60px) rotate(30deg); transform: translateX(770px) translateY(60px) rotate(30deg);}                
     to { -webkit-transform: translateX(220px) translateY(100px) rotate(30deg); transform: translateX(220px) translateY(100px) rotate(30deg); }
-}
+}*/
 
 
 .worker__tag:nth-child(5) { 
@@ -1863,9 +1900,13 @@ h2{
             animation: wheel_54 1s 0s;    
     -webkit-animation-fill-mode: both;    
             animation-fill-mode: both;  
+
+    left: 150px;
+    top: 0;
+    bottom: auto;
 }
 
-@-webkit-keyframes wheel_54 {
+/*@-webkit-keyframes wheel_54 {
     from { -webkit-transform: translateX(0px) translateY(0px) rotate(-20deg); transform: translateX(0px) translateY(0px) rotate(-20deg);}                
     to { -webkit-transform: translateX(150px) translateY(0px) rotate(-20deg); transform: translateX(150px) translateY(0px) rotate(-20deg); }
 }
@@ -1873,7 +1914,7 @@ h2{
 @keyframes wheel_54 {
     from { -webkit-transform: translateX(0px) translateY(0px) rotate(-20deg); transform: translateX(0px) translateY(0px) rotate(-20deg);}                
     to { -webkit-transform: translateX(150px) translateY(0px) rotate(-20deg); transform: translateX(150px) translateY(0px) rotate(-20deg); }
-}
+}*/
 
 .picture__about-svg--desktop{
     bottom: 240px;
@@ -1922,11 +1963,11 @@ h2{
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
 }
-.link-list-footer {
+.menu-bottom__link-list {
     padding: 50px 0 30px;
     margin-bottom: 0;
 }
-.item-footer{
+.item-box{
     display: inline-block;
     line-height: 16px;
     padding-bottom: 20px;
@@ -1942,7 +1983,7 @@ h2{
 .column_address {
     margin-top: 50px;
 }
-.item-footer a {
+.link-bottom {
     font-size: 16px;
 }
 }
@@ -2025,7 +2066,7 @@ h2{
       flex-shrink: 0;
 }
 
-.slider__item img {
+.item__img{
   display: block;
   width: 100%;
   height: 290px;
@@ -2047,7 +2088,7 @@ h2{
 
 @media (max-width: 1023.9px) {
 
-.slider__item img {
+.item__img {
 
     height: 200px;
 }

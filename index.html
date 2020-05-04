@@ -28,42 +28,48 @@
 
 </head>
 
-<body>
+<body class="page">
 	<header class="page-header fixed-container">
 		<nav class="page-header__hamburger-menu hamburger-menu hamburger-menu--desktop">
+			
 			<ul class="hamburger-menu__list link-list--desktop">
-				<li class="link-list__item--desktop">
-					<a class="box__item--desktop" href="#skills__title">Услуги</a>
+
+				<li class="link-list__item-box item-box--desktop">
+					<a class="item-box__link  link--desktop" href="#skills__title">Услуги</a>
 				</li>
 
-				<li class="link-list__item--desktop">
-					<a class="box__item--desktop" href="#praxis">Портфолио</a>
+				<li class="link-list__item-box item-box--desktop">
+					<a class="item-box__link  link--desktop" href="#praxis">Портфолио</a>
 				</li>
 
-				<li class="link-list__item--desktop">
-					<a class="box__item--desktop" href="#price">Стоимость</a>
+				<li class="link-list__item-box item-box--desktop">
+					<a class="item-box__link  link--desktop" href="#price">Стоимость</a>
 				</li>
+
 			</ul>
+
 		</nav>
 
-		<button class="hamburger-menu__button button--mobile">
+		<button class="hamburger-menu__button button--mobile button">
 	    	<span class="button__menu"></span>
 	    	<span class="button__menu"></span>
 	    	<span class="button__menu"></span>
 	    </button>
 
 	    <nav class="page-header__hamburger-menu hamburger-menu hamburger-menu--mobile">
+
 	    	<ul data-visible="false" class="hamburger-menu__list link-list--mobile" >
-		    	<li class="link-list__item--mobile">
-		    		<a class="box__item--mobile" href="#skills__title">Услуги</a>
+
+		    	<li class="link-list__item-box item-box--mobile">
+		    		<a class="item-box__link  link--mobile" href="#skills__title">Услуги</a>
 		    	</li>
 
-				<li class="link-list__item--mobile">
-					<a class="box__item--mobile" href="#praxis">Портфолио</a>
+				<li class="link-list__item-box item-box--mobile">
+					<a class="item-box__link  link--mobile" href="#praxis">Портфолио</a>
 				</li>
 
-				<li class="link-list__item--mobile">
-					<a class="box__item--mobile" href="#price">Стоимость</a>
+				<li class="link-list__item-box item-box--mobile">
+					<a class="item-box__link  link--mobile" href="#price">Стоимость</a>
 				</li>
 			</ul>
 	    </nav>
@@ -73,11 +79,11 @@
 
 			<a class="contact__tel" href="tel:+79154848102">+7 (915) 555-55-55</a>
 			
-			<button class="contact__call">Заказать звонок</button>
+			<button class="contact__call button">Заказать звонок</button>
 
 			<div class="contact__request-call request-call">
 				
-				<button class="request-call__close close">
+				<button class="request-call__close close button">
 			    	<span class="close__button"></span>
 			    	<span class="close__button"></span>
 			    </button>
@@ -87,16 +93,16 @@
 					<div class="form__legend"> Онлайн заявка</div>
 
 					<label class="form__name name">Ваше имя<br>
-						<input class="name__field" type="text" name="name" placeholder="Имя"><br>
+						<input class="name__field" required type="text" name="name" placeholder="Имя"><br>
 					</label>
 
 					<label class="form__tel tel">Ваш номер телефона<br>
-						<input id="phone" class="tel__field" type="text" name="tel" placeholder="+7 (777) 777 77 77"><br>
+						<input id="phone" class="tel__field" required type="text" name="tel" placeholder="+7 (777) 777 77 77"><br>
 					</label>
 
 					<label class="form__address address">Адрес вашей электронной почты<br>
 						
-						<input class="address__field" type="email" name="address" placeholder="mail@mail.ru">
+						<input class="address__field" required type="email" name="address" placeholder="mail@mail.ru">
 						<span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
 						<br>
 	
@@ -111,14 +117,14 @@
 		</div>
 
 		<div class="page-header__button-phone button-phone--mobile" >
-			<div class="button-phone__img"></div>
+			<div class="button-phone__img button"></div>
 		</div>
 
 		<div class="overlay"></div>
 
 	</header>
 
-	<main class="page">
+	<main class="page__main main">
 
 		<section class="page__worker worker">
 
@@ -138,7 +144,7 @@
 						<h1 class="about__name">Мария Машталир</h1>
 						<h2 class="about__work">Frontend-разработчик и веб-верстальщик</h2>
 						
-						<button class="about__more">Узнать больше</button>
+						<button class="about__more button">Узнать больше</button>
 					</div>
 					
 					<img class="box__selfie" src="img/shutterstock_574398823.svg" alt="Фото_разработчика">
@@ -184,7 +190,7 @@
 				</div>
 
 				<div class="skills__button-box button-box">
-					<button class="button-box__price">Узнать стоимость</button>	
+					<button class="button-box__price button">Узнать стоимость</button>	
 				</div>
 
 			</div>
@@ -214,14 +220,14 @@
 
 		      </ul>
 
-	    	<button class="slider__button slider__button--prev" aria-label="Предыдущий слайд"></button>
+	    	<button class="slider__button slider__button--prev button" aria-label="Предыдущий слайд"></button>
 
-	  		<button class="slider__button slider__button--next" aria-label="Следующий слайд"></button>
+	  		<button class="slider__button slider__button--next button" aria-label="Следующий слайд"></button>
 
 	  		<div class="slider__pagination paginator" aria-hidden="true"></div>
 
 			<div class="praxis__button-box button-box">
-				<button class="button-box__order">Заказать проект</button>		
+				<button class="button-box__order button">Заказать проект</button>		
 			</div>
 
 		</section>
@@ -237,7 +243,7 @@
 				<span class="circs-block__tag"> {&nbsp;} </span>
 			
 			<div id="price" class="circs-block__circs  circs fixed-container">
-				<div class="circs__price">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</div>
+				<h2 class="circs__price">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h2>
 				<div class="circs__period">* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</div>
 			</div>
 
@@ -250,18 +256,18 @@
 			
 			<nav class="inform__menu-bottom menu-bottom"> 
 				
-				<ul class="menu-bottom__list link-list-footer">
+				<ul class="menu-bottom__link-list link-list">
 					
-					<li class="link-list__item item-footer">
-						<a class="item__skill" href="#skills__title">Услуги</a>
+					<li class="link-list__item-box item-box">
+						<a class="item-box__link link-bottom" href="#skills__title">Услуги</a>
 					</li>
 					
-					<li class="link-list__item item-footer">
-						<a class="item__skill" href="#praxis">Портфолио</a>
+					<li class="link-list__item-box item-box">
+						<a class="item-box__link link-bottom" href="#praxis">Портфолио</a>
 					</li>
 					
-					<li class="link-list__item item-footer">
-						<a class="item__skill" href="#price">Стоимость</a>
+					<li class="link-list__item-box item-box">
+						<a class="item-box__link link-bottom" href="#price">Стоимость</a>
 					</li>
 
 				</ul>
@@ -277,7 +283,7 @@
 				
 			<div class="inform__column column">
 
-				<button class="column__call" >Заказать звонок</button>
+				<button class="column__call button" >Заказать звонок</button>
 				
 				<address class="column_address address">
 					<a class="address__sprite sprite" href="https://vk.com" target="_blank">
