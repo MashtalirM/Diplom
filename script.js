@@ -52,36 +52,21 @@ $(document).ready(function(){
 
     });
 
-
-
-
-      /*$('.form__send').on('click', function(event){
-        event.preventDefault();
-        
-        $('.request-call').fadeToggle();
-        $('.overlay').fadeToggle();
-
-        $.post( "https://echo.htmlacademy.ru/", function() {
-        alert( "Заявка принята!" );
-      })*/
-
- /*     $('.form__send').click( function(event){
-        $( "form" ).submit();// вызываем событие submit на элементе <form>
-      });*/
-
-      $( "form" ).submit(function(){
+    $( "form" ).submit(function(event){
         
         event.preventDefault();
 
         let $form = $(this);
      
         $.post( 
-          $form.attr("https://echo.htmlacademy.ru/"),
-          $form.serialize()
-        );
+		
+		$form.attr("action"),
 
-        return false;
-      });
+        $form.serialize(), function(){
+          alert( "Заявка принята!" );
+        });
+
+       return false
 
 
     });
@@ -91,7 +76,7 @@ $(document).ready(function(){
       });
 
 
-
+});
 
 
 
