@@ -64,6 +64,7 @@ $(document).ready(function(){
 
         $form.serialize(), function(){
           alert( "Заявка принята!" );
+          $form[0].reset();
         });
 
        return false
