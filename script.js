@@ -34,11 +34,18 @@ $(document).ready(function(){
 
 	});
 
-    $('.overlay, .close').on('click', function(event){
+    $('.close').on('click', function(event){
         $('.request-call').fadeToggle();
         $('.overlay').fadeToggle();
 
     });
+
+    $('.overlay').on('click', function(event){
+        $('.request-call').hide();
+        $('.overlay').hide();
+
+    });
+
 
     $('.button-phone--mobile').on('click', function(event){
         $('.overlay').fadeToggle();
@@ -63,10 +70,15 @@ $(document).ready(function(){
 		$form.attr("action"),
 
         $form.serialize(), function(){
-          alert( "Заявка принята!" );
-          $form[0].reset();
+
+       $('.request-call').hide();
+       $('.request-call__accept').fadeToggle();
+        setTimeout("$('.overlay').hide()", 2000);
+        setTimeout("$('.request-call__accept').hide()", 2000);
+
         });
 
+       setTimeout(() =>  $form[0].reset(), 1000);
        return false
 
 
